@@ -37,45 +37,45 @@
 				<!-- Driver ID-->
 				<div class="wrap-input100 validate-input" data-validate="Driver ID is required">
 					<span class="label-input100">Driver ID</span>
-					<input class="input100" type="text" name="driverid" placeholder="Enter your OIC number.">
+					<input class="input100" type="number" name="driver_id" placeholder="Enter your OIC number.">
 					<span class="focus-input100"></span>
 				</div>
 				<!-- Trip Number-->
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+				<div class="wrap-input100 validate-input" data-validate = "Please enter your trip number.">
 					<span class="label-input100">Trip Number</span>
-					<input class="input100" type="text" name="tripnumber" placeholder="Enter your trip number.">
+					<input class="input100" type="number" name="trip_number" placeholder="Enter your trip number.">
 					<span class="focus-input100"></span>
 				</div>
 				<!-- Vehicle-->
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+				<div class="wrap-input100 validate-input" data-validate = "Please enter your vehicle number.">
 					<span class="label-input100">Vehicle Number</span>
-					<input class="input100" type="text" name="vehicle" placeholder="Enter your vehicle number.">
+					<input class="input100" type="number" name="vehicle" placeholder="Enter your vehicle number.">
 					<span class="focus-input100"></span>
 				</div>
 
 				<!-- Date -->
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+				<div class="wrap-input100 validate-input" data-validate = "Please enter a valid date.">
 					<span class="label-input100">Date</span>
 					<input class="input100" type="date" name="date">
 					<span class="focus-input100"></span>
 				</div>
 				<!-- Time In-->
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+				<div class="wrap-input100 validate-input" data-validate = "Please enter what time you arrived.">
 					<span class="label-input100">Time In</span>
-					<input class="input100" type="time" name="timein">
+					<input class="input100" type="time" name="time_in">
 					<span class="focus-input100"></span>
 				</div>
 				<!-- Mileage -->
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+				<div class="wrap-input100 validate-input" data-validate = "Please enter your current mileage.">
 					<span class="label-input100">Mileage</span>
-					<input class="input100" type="text" name="mileage" placeholder="Enter your current mileage.">
+					<input class="input100" type="number" name="mileage" placeholder="Enter your current mileage.">
 					<span class="focus-input100"></span>
 				</div>
 				<!-- Current Driver -->
 				<div class="wrap-input100 input100-select">
 					<span class="label-input100">Driver</span>
 					<div>
-						<select class="selection-2" name="service">
+						<select class="selection-2" name="driver">
 							<option>O</option>
 							<option>A</option>
 							<option>O/A</option>
@@ -85,39 +85,81 @@
 					<span class="focus-input100"></span>
 				</div>
 				<!-- Location -->
+				<div class="wrap-input100 validate-input" data-validate = "Please enter where you are.">
+					<span class="label-input100">Location</span>
+					<input class="input100" type="text" name="location" placeholder="Enter your current location.">
+					<span class="focus-input100"></span>
+				</div>
+				<!-- Time Out -->
+				<div class="wrap-input100 validate-input" data-validate = "Please enter what time you left.">
+					<span class="label-input100">Time Out</span>
+					<input class="input100" type="time" name="time_out">
+					<span class="focus-input100"></span>
+				</div>				
+				<!-- POB -->
 				<div class="wrap-input100 input100-select">
-					<span class="label-input100">Budget</span>
+					<span class="label-input100">Prisoners on Board</span>
 					<div>
-						<select class="selection-2" name="budget">
-							<option>Select Budget</option>
-							<option>1500 $</option>
-							<option>2000 $</option>
-							<option>2500 $</option>
+						<select class="selection-2" name="pob">
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>	
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>	
+							<option>11</option>					
 						</select>
 					</div>
 					<span class="focus-input100"></span>
 				</div>
-				<!-- Time Out -->
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<span class="label-input100">Message</span>
-					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+				<!-- Purpose of Stop -->
+				<div class="wrap-input100 validate-input" data-validate = "Please enter why you were here.">
+					<span class="label-input100">Purpose of Stop</span>
+					<input class="input100" type="text" name="pos" placeholder="What did you do here.">
 					<span class="focus-input100"></span>
 				</div>
-				<!-- POB -->
-
-				<!-- Purpose of Stop -->
-
 				<!-- Maintenance -->
-
+				<div class="wrap-input100 validate-input" data-validate = "Please enter a valid number.">
+					<span class="label-input100">Maintenance</span>
+					<input class="input100" type="number" name="maintenance" placeholder="$0.00.">
+					<span class="focus-input100"></span>
+					</div>
 				<!-- Fuel -->
-
+				<div class="wrap-input100 validate-input" data-validate = "Please enter a valid number.">
+					<span class="label-input100">Fuel</span>
+					<input class="input100" type="number" name="fuel" placeholder="$0.00.">
+					<span class="focus-input100"></span>
+					</div>
 				<!-- Food -->
-
+				<div class="wrap-input100 validate-input" data-validate = "Please enter a valid number.">
+					<span class="label-input100">Food</span>
+					<input class="input100" type="number" name="food" placeholder="$0.00">
+					<span class="focus-input100"></span>
+					</div>
 				<!-- Housing -->
-
+				<div class="wrap-input100 validate-input" data-validate = "Please enter a valid number.">
+					<span class="label-input100">Housing</span>
+					<input class="input100" type="number" name="housing" placeholder="$0.00">
+					<span class="focus-input100"></span>
+					</div>
 				<!-- Miscellaneous -->
-
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Miscellaneous</span>
+					<input class="input100" type="number" name="miscellaneous" placeholder="$0.00.">
+					<span class="focus-input100"></span>
+					</div>
 				<!-- Perdiem Paid -->
+				<div class="wrap-input100 validate-input" data-validate = "Please enter a valid number.">
+					<span class="label-input100">Perdiem</span>
+					<input class="input100" type="number" name="perdiem" placeholder="$0.00.">
+					<span class="focus-input100"></span>
+					</div>
+
 				<div class="container-contact100-form-btn">
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn"></div>
